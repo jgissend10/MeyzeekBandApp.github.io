@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="http://mediaprocessor.websimages.com/width/270/crop/0,0,270x236/www.meyzeekband.com/MMS%20Logo%20Lg.jpg" rel="icon" type="image/x-icon"/>
+		<script lang="JavaScript">
+			function pinkAudio(){
+				for(n = 0; n < allAudio.length; n++){
+					allAudio[n].pause();
+					allAudio[n].currentTime = 0;
+				};
+				var track = Math.round(Math.random() * (max - min)) + min;
+				switch(track){
+					case 1:
+						var audio = pink1;
+						break;
+					case 2:
+						var audio = pink2;
+						break;
+					case 3:
+						var audio = pink3;
+						break;
+				};
+				document.getElementById("pink").disabled = "disabled";
+				audio.play();
+			};
+			function blueAudio(){
+				for(n = 0; n < allAudio.length; n++){
+					allAudio[n].pause();
+					allAudio[n].currentTime = 0;
+				};
+				var track = Math.round(Math.random() * (max - min)) + min;
+				switch(track){
+					case 1:
+						var audio = blue1;
+						break;
+					case 2:
+						var audio = blue2;
+						break;
+					case 3:
+						var audio = blue3;
+						break;
+				};
+				document.getElementById("blue").disabled = "disabled";
+				audio.play();
+			};
+			function greenAudio(){
+				for(n = 0; n < allAudio.length; n++){
+					allAudio[n].pause();
+					allAudio[n].currentTime = 0;
+				};
+				var track = Math.round(Math.random() * (max - min)) + min;
+				switch(track){
+					case 1:
+						var audio = green1;
+						break;
+					case 2:
+						var audio = green2;
+						break;
+					case 3:
+						var audio = green3;
+						break;
+				};
+				document.getElementById("green").disabled = "disabled";
+				audio.play();
+			};
+			function yellowAudio(){
+				for(n = 0; n < allAudio.length; n++){
+					allAudio[n].pause();
+					allAudio[n].currentTime = 0;
+				};
+				var track = Math.round(Math.random() * (max - min)) + min;
+				switch(track){
+					case 1:
+						var audio = yellow1;
+						break;
+					case 2:
+						var audio = yellow2;
+						break;
+					case 3:
+						var audio = yellow3;
+						break;
+				};
+				document.getElementById("yellow").disabled = "disabled";
+				audio.play();
+			};
+		</script>
+		<style type="text/css">
+			body{
+				overflow: auto;
+			}
+			button{
+				width: 50%;
+				height: 49vh;
+			}
+			#pink{
+				background-color: #ff80ff;
+				float: left;
+			}
+			#blue{
+				background-color: #8080ff;
+				float: right;
+			}
+			#green{
+				background-color: #80ff80;
+				float: left;
+			}
+			#yellow{
+				background-color: #ffff80;
+				float: right;
+			}
+			button:hover{
+				cursor: pointer;
+			}
+			#pink:disabled{
+				background-color: #808080;
+				cursor: not-allowed;
+			}
+			#blue:disabled{
+				background-color: #808080;
+				cursor: not-allowed;
+			}
+			#green:disabled{
+				background-color: #808080;
+				cursor: not-allowed;
+			}
+			#yellow:disabled{
+				background-color: #808080;
+				cursor: not-allowed;
+			}
+		</style>
+	</head>
+	<body>
+		<script lang="JavaScript">
+			var min = 1;
+			var max = 3;
+			var pink1 = new Audio("audio/1A.mp3");
+			var pink2 = new Audio("audio/1B.mp3");
+			var pink3 = new Audio("audio/1C.mp3");
+			var blue1 = new Audio("audio/2A.mp3");
+			var blue2 = new Audio("audio/2B.mp3");
+			var blue3 = new Audio("audio/2C.mp3");
+			var green1 = new Audio("audio/3A.mp3");
+			var green2 = new Audio("audio/3B.mp3");
+			var green3 = new Audio("audio/3C.mp3");
+			var yellow1 = new Audio("audio/4A.mp3");
+			var yellow2 = new Audio("audio/4B.mp3");
+			var yellow3 = new Audio("audio/4C.mp3");
+			var allAudio = [pink1, pink2, pink3, blue1, blue2, blue3, green1, green2, green3, yellow1, yellow2, yellow3];
+		</script>
+		<button id="pink" onClick="pinkAudio();"></button>
+		<button id="blue" onClick="blueAudio();"></button>
+		<button id="green" onClick="greenAudio();"></button>
+		<button id="yellow" onClick="yellowAudio();"></button>
+	</body>
+</html>
