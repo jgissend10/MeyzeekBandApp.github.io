@@ -1,8 +1,55 @@
 <!DOCTYPE html>
-<html>
+		<!--
+
+
+
+
+                                          `-.`'.-'
+                                       `-.        .-'.
+                                    `-.    -./\.-    .-'
+                                        -.  /_|\  .-
+                                    `-.   `/____\'   .-'.
+                                 `-.    -./.-""-.\.-      '
+                                    `-.  /< (()) >\  .-'
+                                  -   .`/__`-..-'__\'   .-
+                                ,...`-./___|____|___\.-'.,.
+                                   ,-'   ,` . . ',   `-,
+                                ,-'   ________________  `-,
+                                   ,'/____|_____|_____\
+                                  / /__|_____|_____|___\
+                                 / /|_____|_____|_____|_\
+                                ' /____|_____|_____|_____\
+                              .' /__|_____|_____|_____|___\
+                             ,' /|_____|_____|_____|_____|_\
+,,---''--...___...--'''--.. /../____|_____|_____|_____|_____\ ..--```--...___...--``---,,
+                           '../__|_____|_____|_____|_____|___\
+      \    )              '.:/|_____|_____|_____|_____|_____|_\               (    /
+      )\  / )           ,':./____|_____|_____|_____|_____|_____\             ( \  /(
+     / / ( (           /:../__|_____|_____|_____|_____|_____|___\             ) ) \ \
+    | |   \ \         /.../|_____|_____|_____|_____|_____|_____|_\           / /   | |
+ .-.\ \    \ \       '..:/____|_____|_____|_____|_____|_____|_____\         / /    / /.-.
+(=  )\ `._.' |       \:./ _  _ ___  ____ ____ _    _ _ _ _ _  _ ___\        | `._.' /(  =)
+ \ (_)       )       \./  											 \       (       (_) /
+  \    `----'         """"""""""""""""""""""""""""""""""""""""""""""""       `----'    /
+   \   ____\__         												       __/____   /
+    \ (=\     \        													    /     /-) /
+     \_)_\     \     												     /     /_(_/
+          \     \                                                        /     /
+           )     )  _                                                _  (     (
+          (     (,-' `-..__                                    __..-' `-,)     )
+           \_.-''          ``-..____                  ____..-''          ``-._/
+            `-._                    ``--...____...--''                    _.-'
+                `-.._                                                _..-'
+                     `-.._         	     VI-VI-VI              __..-'
+                           ``-..____                  ____..-''
+                                    ``--...____...--''
+
+-->
+<html lang="en">
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link href="http://mediaprocessor.websimages.com/width/270/crop/0,0,270x236/www.meyzeekband.com/MMS%20Logo%20Lg.jpg" rel="icon" type="image/x-icon"/>
+		<title>Band App</title>
 		<script lang="JavaScript">
 			function pinkAudio(){
 				for(n = 0; n < allAudio.length; n++){
@@ -22,7 +69,11 @@
 						break;
 				};
 				document.getElementById("pink").disabled = "disabled";
+				setTimeout(enablePink, 18000);
 				audio.play();
+			};
+			function enablePink(){
+				document.getElementById("pink").disabled = "";
 			};
 			function blueAudio(){
 				for(n = 0; n < allAudio.length; n++){
@@ -42,7 +93,11 @@
 						break;
 				};
 				document.getElementById("blue").disabled = "disabled";
+				setTimeout(enableBlue, 21000);
 				audio.play();
+			};
+			function enableBlue(){
+				document.getElementById("blue").disabled = "";
 			};
 			function greenAudio(){
 				for(n = 0; n < allAudio.length; n++){
@@ -62,7 +117,11 @@
 						break;
 				};
 				document.getElementById("green").disabled = "disabled";
+				setTimeout(enableGreen, 22000);
 				audio.play();
+			};
+			function enableGreen(){
+				document.getElementById("green").disabled = "";
 			};
 			function yellowAudio(){
 				for(n = 0; n < allAudio.length; n++){
@@ -82,7 +141,11 @@
 						break;
 				};
 				document.getElementById("yellow").disabled = "disabled";
+				setTimeout(enableYellow, 21000);
 				audio.play();
+			};
+			function enableYellow(){
+				document.getElementById("yellow").disabled = "";
 			};
 		</script>
 		<style type="text/css">
@@ -132,6 +195,7 @@
 	</head>
 	<body>
 		<script lang="JavaScript">
+			console.log("This was made by Grace Hedges and Cody Humphrey. \nKeaton Jones and Brian Schwartz didn't do much, but oh well. ¯\_(ツ)_/¯");
 			var min = 1;
 			var max = 3;
 			var pink1 = new Audio("audio/1A.mp3");
